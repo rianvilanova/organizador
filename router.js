@@ -4,7 +4,7 @@ const transactionsController = require('./controllers/transactionsController')
 
 const router = express.Router()
 
-router.get('/', transactionsController.getAll)
-router.post('/transactions', transactionsController.createTask)
+router.get('/transactions', transactionsController.getAll)
+router.post('/transactions', transactionsController.createTransaction)
 
 module.exports = router;
